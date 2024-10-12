@@ -1,0 +1,39 @@
+@import "../../assets/variables.scss";
+.hamburger {
+    background-image: $PrimaryBackgroundColor;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    left: 0px;
+    z-index: 2;
+    padding-top: 150px;
+
+    &__list {
+        height: 100vw;
+        width: 100%;
+        font-weight: 800;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--item {
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+    }
+
+    &__cross {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        filter: invert(1) brightness(500%);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

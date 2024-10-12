@@ -1,0 +1,106 @@
+@use "../../mediaquery/media.scss";
+@use "../../mediaquery/devices.scss";
+@import "../../assets/variables.scss";
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-image: $PrimaryBackgroundColor;
+    color: white;
+    padding: 10px 0px;
+    &__heading {
+        text-decoration: none;
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    &__logo {
+        width: 170px;
+        margin: 0px 0px 0px 20px;
+    }
+    &__logo:hover {
+        cursor: pointer;
+    }
+    &__list {
+        display: flex;
+        margin: 20px;
+        padding: 0px 15px 0px 0px;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+        gap: 50px;
+        &--item {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        &--item:hover {
+            transform: scale(1.05);
+            text-decoration: underline;
+        }
+    }
+    &__item {
+        display: none;
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+        color: white;
+        filter: invert(1) brightness(500%);
+    }
+}
+
+.navigation {
+    @include media.small-phone {
+        &__list {
+            display: none;
+        }
+        &__item {
+            display: block;
+        }
+        &__logo {
+            width: 80px;
+            margin: 5px 0px 0px 10px;
+        }
+    }
+    @include media.phone {
+        &__list {
+            display: none;
+        }
+        &__item {
+            display: block;
+        }
+        &__logo {
+            width: 80px;
+            margin: 5px 0px 0px 10px;
+        }
+    }
+    @include media.large-phone {
+        &__list {
+            display: none;
+        }
+        &__item {
+            display: block;
+        }
+        &__logo {
+            width: 100px;
+            margin: 5px 0px 0px 10px;
+        }
+    }
+    @include media.kindle {
+        &__list {
+            display: none;
+        }
+        &__item {
+            display: block;
+        }
+    }
+    @include media.small-tablet {
+        &__list {
+            display: none;
+        }
+        &__item {
+            display: block;
+        }
+    }
+}
