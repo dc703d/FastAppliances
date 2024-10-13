@@ -1,0 +1,87 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__heading {
+        font-weight: 500;
+        font-size: 34px;
+        color: rgb(65, 88, 237);
+    }
+    &__tagline {
+        font-weight: 400;
+        color: rgb(73, 73, 73);
+        margin-bottom: 80px;
+        font-size: 16px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 50px;
+        &--box {
+            width: 370px;
+            height: 300px;
+            background-color: black;
+            border-radius: 15px;
+            // border: 2px solid grey;
+            box-shadow: 5px 5px 5px rgb(52, 52, 52);
+
+            h1 {
+                color: white;
+                font-size: 28px;
+                margin-left: 20px;
+                font-weight: 500;
+                margin-bottom: 0px;
+            }
+            &--line {
+                color: white;
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 8px;
+            }
+            &--para {
+                color: white;
+                margin: 20px;
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: 0px;
+            }
+            &--buttoncontainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+            &--button {
+                background-color: white;
+                border: none;
+                width: 80%;
+                height: 40px;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 5px;
+                box-shadow: 5px 5px 15px rgb(52, 52, 52);
+                &--domestic {
+                    color: #014958;
+                }
+                &--commercial {
+                    color: #005400;
+                }
+                &--agency {
+                    color: #4c00a0;
+                }
+            }
+        }
+        &--domestic {
+            background: linear-gradient(90deg, #009ab2 0%, #014958 100%);
+        }
+        &--commercial {
+            background: linear-gradient(90deg, #00b700 0%, #005400 100%);
+        }
+        &--agency {
+            background: linear-gradient(90deg, #8f29e4 0%, #4c00a0 100%);
+        }
+    }
+}

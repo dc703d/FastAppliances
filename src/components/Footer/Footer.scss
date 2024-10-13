@@ -1,0 +1,95 @@
+@use "../../mediaquery/media.scss";
+@use "../../mediaquery/devices.scss";
+@import "../../assets/variables.scss";
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(139, 137, 137);
+    color: white;
+    padding: 5px 0px;
+    &__heading {
+        align-self: center;
+        margin-left: 40px;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    &__copyright {
+        align-self: center;
+        margin-right: 30px;
+        padding-top: 10px;
+    }
+}
+
+// @include media.small-phone {
+//     .footer {
+//         flex-direction: column;
+//         width: 100%;
+//         text-align: center;
+//         &__heading {
+//             font-size: 18px;
+//             margin: 0px;
+//             margin-top: 10px;
+//         }
+//         &__copyright {
+//             max-width: 80%;
+//             font-size: 5px;
+//             margin: 0px;
+//             padding-top: 0px;
+//             padding-bottom: 15px;
+//         }
+//     }
+// }
+
+// @include media.phone {
+//     .footer {
+//         flex-direction: column;
+//         width: 100%;
+//         text-align: center;
+//         &__heading {
+//             font-size: 20px;
+//             margin: 0px;
+//             margin-top: 10px;
+//         }
+//         &__copyright {
+//             max-width: 80%;
+//             font-size: 8px;
+//             margin: 0px;
+//             padding-top: 0px;
+//             padding-bottom: 15px;
+//         }
+//     }
+// }
+
+// @include media.large-phone {
+//     .footer {
+//         flex-direction: column;
+//         width: 100%;
+//         text-align: center;
+//         &__heading {
+//             font-size: 20px;
+//             margin: 0px;
+//             margin-top: 10px;
+//         }
+//         &__copyright {
+//             max-width: 80%;
+//             font-size: 8px;
+//             margin: 0px;
+//             padding-top: 0px;
+//             padding-bottom: 15px;
+//         }
+//     }
+// }
+
+// @include media.kindle {
+//     .footer {
+//         &__heading {
+//             font-size: 18px;
+//         }
+//         &__copyright {
+//             font-size: 6px;
+//         }
+//     }
+// }
