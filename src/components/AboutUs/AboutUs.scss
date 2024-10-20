@@ -1,0 +1,15 @@
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    // background-color: blue;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+
+    &__heading {
+        font-weight: 500;
+        font-size: 34px;
+        color: #4158ed;
+    }
+}

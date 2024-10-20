@@ -10,7 +10,7 @@
         align-items: center;
         background-image: linear-gradient(
                 to left,
-                rgba(234, 28, 28, 0.48),
+                #ea1c1c7a,
                 rgba(9, 19, 108, 0.77)
             ),
             url("../../assets/appliancerepair.jpg");
@@ -45,8 +45,9 @@
         font-weight: 500;
         border-radius: 10px;
         border: none;
-        background-color: rgb(255, 255, 255);
-        color: blue;
+        box-shadow: 5px 5px 15px black;
+        background-color: rgb(50, 72, 218);
+        color: white;
         &--phone {
             width: 40px;
             margin-bottom: 5px;

@@ -1,0 +1,32 @@
+.box {
+    border: 2px solid #009ab2;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.question {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 0px;
+}
+
+.answer {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.answer.visible {
+    opacity: 1;
+    max-height: 900px;
+}

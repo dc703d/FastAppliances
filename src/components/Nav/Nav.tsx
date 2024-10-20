@@ -38,13 +38,13 @@ const Nav = () => {
                 </Link>
                 <Link
                     className="navigation__list--item"
-                    to={"/FastAppliances/help&advice"}
+                    to={"/FastAppliances/help"}
                 >
                     Help & Advice
                 </Link>
                 <Link
                     className="navigation__list--item"
-                    to={"/FastAppliances/book-a-repair"}
+                    to={"/FastAppliances/book"}
                 >
                     Book a Repair
                 </Link>
